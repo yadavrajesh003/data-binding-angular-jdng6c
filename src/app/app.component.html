@@ -1,0 +1,21 @@
+<h3>One Way Data Binding</h3>
+<h4>Interpolation</h4>
+<p>String Interpola - {{num1 * num2}}<p>
+<hr/>
+
+<h4>Property binding</h4>
+<div><img [src]="image" alt="image Not Available"></div>
+
+<hr/>
+<h4>Event binding</h4>
+<div>
+  <button (click)="hello()">Say Hello</button>
+</div>
+<hr/>
+
+<h3>Two Way Data Binding</h3>
+<div>
+<pre>{{ user | json }}</pre>
+</div>
+
+<app-edit-user [(user)]="user"></app-edit-user>
